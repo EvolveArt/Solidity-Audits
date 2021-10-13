@@ -26,10 +26,12 @@ The NFTMarket contract is deployed on *Arbitrum One* mainnet at [0xB6410a1B2d923
 - The owner can withdraw the sale fees at any time.
 - The owner can add/edit a collection at any time meaning the creator fee as well as the creator address.
 
+---
+
 ## Code Structure
 
 ### Functions Graph
-<img src="./images/graph_agora.svg" width="500px" height="500px">
+<img src="./images/graph_agora.png" width="100%" height="100%">
 
 ### Inheritance Graph
 
@@ -38,6 +40,8 @@ The NFTMarket contract is deployed on *Arbitrum One* mainnet at [0xB6410a1B2d923
 ### UML Graph
 
 <img src="./images/uml_agora.png" width="500px" height="500px">
+
+---
 
 ## Security Analysis
 
@@ -77,6 +81,7 @@ The NFTs are stored right in the contract just like `PancakeSwap` NFT marketplac
 
 The frontend could get potentially slower as the `idToMarketItem` mapping gets filled. Although the `fetchMarketItems(address _nftContract)` function helps optimizing that.
 
+---
 
 ### Credits
 
