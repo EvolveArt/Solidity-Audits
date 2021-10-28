@@ -40,7 +40,7 @@ Step 2 : Redeploy the contract with the bugfix.
 
 Note a proxy wasn't used as our V2 will be slightly different than the V1 and thefore cannot be updated through a proxy.
 
-You can check the Solidity Finance audit on this link : [Solidity Finance](https://solidity.finance/)
+You can check the Solidity Finance audit on this link : [Solidity Finance](https://solidity.finance/audits/Agora/)
 
 ---
 
