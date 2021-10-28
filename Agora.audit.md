@@ -25,6 +25,22 @@ The NFTMarket contract is deployed on *Arbitrum One* mainnet at [0xB6410a1B2d923
 - The owner can edit the sale fees at any time.
 - The owner can withdraw the sale fees at any time.
 - The owner can add/edit a collection at any time meaning the creator fee as well as the creator address.
+  
+
+### Update
+
+Solidity Finance helped us analyzing the contract. We've found an issue which does not affect our users.
+
+The fees were not reset when withdrawn and therefore could be call indefinitely to withdraw all funds from the contract.
+
+As the product was still early there were no creator fees to redistribute.
+
+Step 1 : Remove the frontend button to prevent any issues.
+Step 2 : Redeploy the contract with the bugfix.
+
+Note a proxy wasn't used as our V2 will be slightly different than the V1 and thefore cannot be updated through a proxy.
+
+You can check the Solidity Finance audit on this link : [Solidity Finance](https://solidity.finance/)
 
 ---
 
